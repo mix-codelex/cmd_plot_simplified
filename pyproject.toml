@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "cmd-plot"
+version = "0.1.1"
+description = ""
+authors = ["Ben Mulongo <benedictmulongo@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+numpy = "^2.3.1"
+click = "^8.2.1"
+
+[tool.poetry.scripts]
+cmd_plot = 'cmd_plot.main:cli'
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
